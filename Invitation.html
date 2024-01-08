@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/317/PNG/512/notepad-icon_34386.png" type="image/x-icon">
+  <title>Invitation</title>
+
+     
+  
+</head>
+<body>
+
+    <header>
+        <img class='Korona' src='https://cdn.icon-icons.com/icons2/1795/PNG/512/king_114843.png'/>
+    </header>
+
+    <section>
+        <h2>Запрошення</h2>
+        <p>Ми раді повідомити вас про нашу особливу подію, яка відбудеться:</p>
+        
+        <div class="event-details">
+            <p><strong>Дата:</strong> 31 грудня 2024</p>
+            <p><strong>Час:</strong> 18:00 - 22:00</p>
+            <p><strong>Місце:</strong> Центральний конференц-зал, Місто: Одеса</p>
+        </div>
+
+        <p>Будемо раді вас бачити, і маємо надію, що ви приєднаєтеся до нас для цього важливого заходу!</p>
+
+        <div class="confirmation">
+            <button onclick="showForm()">Підтвердити участь</button>
+        </div>
+
+        <!-- Додана форма, спочатку прихована -->
+        <div id="confirmationForm">
+            <h2>Введіть ваші дані</h2>
+            <form id="userDataForm" onsubmit="submitForm(event)">
+                <label for="fullName">Ім'я і прізвище:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="address">Адреса:</label>
+                <input type="text" id="address" name="address" required>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </section>
+
+      <script src="Invitation.js"></script>
+   <link rel="stylesheet" href="Invitation.css">
+
+</body>
+</html>
